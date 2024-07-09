@@ -7,9 +7,17 @@ public class UImanager : MonoBehaviour
  public static UImanager instance;
     
  
-    void Awake 
-         instance (this);
+    private void Awake()
+    {
+        instance = this;
+    }
 
+
+    private Sprite sprites[];
+    private Image imagens[];
+    private TextMeshProUGUI textoDePontuacao, textoDoRelogio[];
+
+    
     // Start is called before the first frame update
     void Start()
     {

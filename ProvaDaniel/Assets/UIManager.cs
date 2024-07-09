@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class UImanager : MonoBehaviour
 {
-  static UImanager instance;
+ public static UImanager instance;
 
-    public Awake (this)
-         instance
+#
+    void Awake 
+         instance (this);
+
+    Spr
+
+
+
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {

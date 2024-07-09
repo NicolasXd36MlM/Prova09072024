@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class UImanager : MonoBehaviour
 {
- public static UImanager instance;
-    
- 
+    #region Singleton
+    public static UImanager instance;
+
+
     private void Awake()
     {
         instance = this;
     }
+    #endregion
 
 
-    private Sprite sprites[];
-    private Image imagens[];
-    private TextMeshProUGUI textoDePontuacao, textoDoRelogio[];
 
-    
+    [SerializeField] Sprite sprites();
+    [SerializeField] Image imagens();
+    [SerializeField] TextMeshProUGUI textoDePontuacao();
+    [SerializeField] TextMeshProUGUI textoDoRelogio();
+
+
     // Start is called before the first frame update
     void Start()
     {

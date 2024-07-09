@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    int pontos, teclaAtual;
+    float relogio;
+    KeyCode teclas();
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
         
     }
